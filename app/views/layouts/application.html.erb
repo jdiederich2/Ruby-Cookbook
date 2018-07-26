@@ -19,7 +19,13 @@
           <%=link_to 'Home', root_url %>
           <%=link_to 'About', about_url %>
           <%=link_to 'Contact', contact_url %>
+          <%=link_to 'Recipes', recipes_url %>
         </nav>
+        <% if notice %>
+         <div id="notice">
+           <%= notice %>
+         </div>
+        <% end %>
         <%= yield %>
       </section>
       <footer>
